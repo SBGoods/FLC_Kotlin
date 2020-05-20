@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_longAnimTime"
+    android:exitFadeDuration="@android:integer/config_longAnimTime">
+    <item android:drawable="@drawable/bg_tab_selected" android:state_selected="true"/>
+    <item android:drawable="@drawable/bg_tab_unselected" android:state_selected="false"/>
+</animated-selector>

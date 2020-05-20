@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBookshelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookshelfTitle"
+        app:srcCompat="@drawable/bookshelf" />
+
+    <ImageView
+        android:id="@+id/imgSHFB"
+        android:layout_width="126dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/imgBookshelf"
+        app:layout_constraintTop_toTopOf="@+id/imgBookshelf"
+        app:srcCompat="@drawable/staying_healthy_for_beginners_cover" />
+
+    <ImageView
+        android:id="@+id/imgSH"
+        android:layout_width="126dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBookshelf"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toEndOf="@+id/imgSHFB"
+        app:layout_constraintTop_toTopOf="@+id/imgBookshelf"
+        app:srcCompat="@drawable/staying_healthy_cover" />
+
+    <ImageView
+        android:id="@+id/imgCWS"
+        android:layout_width="126dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBookshelf"
+        app:layout_constraintStart_toStartOf="@+id/imgBookshelf"
+        app:layout_constraintTop_toBottomOf="@+id/imgSHFB"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coping_with_stress_cover" />
+
+    <ImageView
+        android:id="@+id/imgWH"
+        android:layout_width="126dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBookshelf"
+        app:layout_constraintEnd_toEndOf="@+id/imgBookshelf"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toEndOf="@+id/imgCWS"
+        app:layout_constraintTop_toBottomOf="@+id/imgSH"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/womens_health_cover" />
+
+    <Button
+        android:id="@+id/bookshelfBtnLearnMore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_custom"
+        android:text="@string/staying_healthy_info"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bookshelfTopBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_bar_with_book" />
+
+    <TextView
+        android:id="@+id/bookshelfTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/bookshelf"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bookshelfTopBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bookshelfTopBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+    <!--provided by Team Green, used with Permission-->
+    <!--<item android:drawable="@android:color/holo_blue_dark"/>-->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient
+                android:startColor="@color/pieBlue"
+                android:endColor="@color/cardview_light_background"
+                android:angle="270"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+        <item>
+
+            <bitmap
+                android:src="@drawable/splashscreen"
+                android:gravity="center" />
+
+        </item>
+
+
+</layer-list>

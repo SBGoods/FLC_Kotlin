@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bookshelfFragment"
+        android:title="@string/study_tab"
+        android:icon="@drawable/ic_book" />
+    <item android:id="@+id/homeFragment"
+        android:title="@string/quiz_tab"
+        android:icon="@drawable/ic_quiz" />
+    <item android:id="@+id/scoreHomeFragment"
+        android:title="@string/score_tab"
+        android:icon="@drawable/ic_trophy"/>
+</menu>
